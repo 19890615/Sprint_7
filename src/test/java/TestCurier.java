@@ -16,7 +16,7 @@ public class TestCurier {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru/";
+        RestAssured.baseURI = BaseURI.baseURI;
         // Создадим объекты курьеров для теста
         courier1 = new Courier("name123212316549", "pass1", "firstname1515");
         courier2 = new Courier("name28528525154252", "pass2", "firstname4321");

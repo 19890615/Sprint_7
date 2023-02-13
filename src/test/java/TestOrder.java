@@ -19,7 +19,7 @@ public class TestOrder {
 
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://qa-scooter.praktikum-services.ru/";
+        RestAssured.baseURI = BaseURI.baseURI;
     }
 
     @Parameterized.Parameters
